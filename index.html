@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="css/mycss.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
 	<section id="introduce" class="introduce">
@@ -20,10 +21,42 @@
 		<div class="searchbar-wrapper">
 			<div class="searchbar-inside">
 				<input id="search" placeholder="106828-04-0">
-				<a href="#"> SEARCH</a>
+				<a href="#"><span> SEARCH <i class="fa fa-search"></i></span></a>
 			</div>
 		</div>
 	</section>
-	
+	<section id="search-results" class="search-results">
+		<div class="search-results-header">
+			<p><span>Search Results</span> (10 suppliers found)</p>
+		</div>
+		<div class="search-results-content">
+			<table class="table-content">
+  				<tr style="height:117px">
+    				<th style="width:600px">
+    					<img src="img/logo.jpg" alt="logo" style="float:left">
+    					<div style="float: right;width: 400px;margin-right: 75px;text-align: left;margin-top: 3px;">
+    						<h2 style="font-size:22px; height:13px; font-weight:lighter"> CAS: 106428-04-0 </h2>
+    						<p style="font-size:13px"> METHYL 3-FLUORO-2-METHOXYBENZOATE, 98%</p>
+    					</div>
+    				</th>
+    				<th style="display:table">
+    					<div style="float:left; width: 160px; display: table-cell; vertical-align:top;margin-top: 24px;">
+    						<button type="button" style="float:left; width:144px; height:29px; background-color:#e4e4e4; border:0; margin-bottom:10px;border-radius: 25px;"><i class="fa fa-check fa-1x" style="font-size:18px; color:#6e6e6e"></i> Checked All</button>
+    						<button type="button" style="float:left; width:144px;
+    						height:29px; background-color:#e4e4e4; border:0;border-radius: 25px;">Unchecked All</button>
+    					</div>
+    				</th>
+  				</tr>
+  				<tr>
+    				<td>January</td>
+    				<td>$100</td>
+  				</tr>
+ 				<tr>
+    				<td>February</td>
+    				<td>$80</td>
+  				</tr>
+			</table>
+		</div>
+	</section>
 </body>
 </html>

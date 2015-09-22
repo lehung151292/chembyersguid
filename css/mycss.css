@@ -34,16 +34,17 @@ body {
 .searchbar {
 	min-height: 148px;
 	background-color: white;
+	text-align: center;
 }
 .searchbar-wrapper {
-	max-width: 565px;
+	width: 565px;
 	min-height: 88px;
 	background-color: #bad9eb;
 	margin:auto;
-	margin-top: 32px;
-	margin-bottom: 30px;
+	margin-top: 30px;
 	border-radius: 82px;
 	text-align: center;
+	display:inline-block;
 }
 .searchbar-inside {
 	width: 530px;
@@ -55,7 +56,7 @@ body {
 	border-radius: 82px;
 }
 .searchbar-inside input{
-	width: 365px;
+	width: 355px;
 	float: left;
 	border: 0px;
 	border-radius: 82px 0 0 82px;
@@ -64,14 +65,51 @@ body {
 	height: 57px;
 	font-size: 18px;
 }
+.searchbar-inside input:focus{
+    margin-left: 30px;
+    padding-left: 0px;
+}
 .searchbar-inside a {
 	float: right;
-	width: 125px;
+	width: 145px;
 	text-decoration: none;
-	display: block;
+	display: table;
 	height: 57px;
 	font-size: 18px;
+	color: white;
+	font-weight: bold;
+    border-radius: 0 82px 82px 0;
+    background: -webkit-linear-gradient(-90deg, #22a6f1, #28abe3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #22a6f1, #28abe3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #22a6f1, #28abe3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #22a6f1, #28abe3); /* Standard syntax (must be last) */
 }
 #search::-webkit-input-placeholder { color:black; font-size: 18px; }
 #search::-moz-input-placeholder { color:black; font-size: 18px; }
 #search:-o-input-placeholder { color:black; font-size: 18px; }
+.searchbar-inside span {
+	display: table-cell;
+    vertical-align: middle;
+}
+.search-results {
+	min-height: 1596px;
+	background-color: white;
+}
+.search-results-header {
+	background-color: #bad9eb;
+	height: 46px;
+	text-align: center;
+}
+.search-results-header p {
+	display: inline;
+	line-height: 46px;
+	color: white;
+}
+.search-results-header span {
+	font-size: 22px;
+}
+.table-content {
+	width: 1200px;
+	margin: 0 auto;
+	border-spacing: 0px;
+}
